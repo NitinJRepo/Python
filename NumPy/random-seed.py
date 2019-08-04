@@ -14,7 +14,20 @@
 
 import numpy as np
 
-np.random.seed(1)
+np.random.seed(5)
 var = np.random.randint(low = 1, high = 10, size = 50)
 
 print(var)
+
+# You can use numpy.random.seed(0), or numpy.random.seed(42), or any other number.
+# For the most part, the number that you use inside of the function doesn’t really make a difference.
+# You just need to understand that using different seeds will cause NumPy to produce different pseudo-random numbers.
+# The output of a numpy.random function will depend on the seed that you use.
+
+np.random.seed(0)
+v1 =  np.random.randint(99, size = 5)
+print("v1 = ", v1)
+
+np.random.seed(1)
+v2 = np.random.randint(99, size = 5)
+print("v2 = ", v2)
