@@ -9,7 +9,7 @@ marks = [ 40, 50, 60, 70 ]
 # using zip() to map values 
 mapped = zip(name, roll_no, marks)
 
-print(mapped)
+print("zipped object = ", mapped)
 
 # converting values to print as list 
 mapped = list(mapped) 
