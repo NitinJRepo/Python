@@ -1,3 +1,5 @@
+# For loop dot product comparison with Numpy dot product 
+
 import numpy as np
 from datetime import datetime
 
